@@ -26,4 +26,7 @@ module.exports = function() {
 
   // Set up our after hooks
   <%= name %>Service.after(hooks.after);
+
+  // Default to not publish everything
+  <%= name %>Service.filter(() => false);
 };
